@@ -1,0 +1,1330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition">
+  <DataSources>
+    <DataSource Name="BatchesDataSet">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>c95c2700-2421-4934-b6d9-58382561c945</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Fields>
+        <Field Name="EngID">
+          <DataField>EngID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="AcountStatus">
+          <DataField>AcountStatus</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TotalRest">
+          <DataField>TotalRest</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Total">
+          <DataField>Total</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Payed">
+          <DataField>Payed</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="TotalPayed">
+          <DataField>TotalPayed</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="AcountID">
+          <DataField>AcountID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="FullName">
+          <DataField>FullName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="BatchDate">
+          <DataField>BatchDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="Bid">
+          <DataField>Bid</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="AcountDate">
+          <DataField>AcountDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="AcountTotalRest">
+          <DataField>AcountTotalRest</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>BatchesDataSet</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>BatchesDataSet</rd:DataSetName>
+        <rd:SchemaPath>C:\Documents and Settings\Anmar Saleh\Desktop\EngCooperation\EngCooperation\BatchesDataSet.xsd</rd:SchemaPath>
+        <rd:TableName>DataReportRest</rd:TableName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterName>DataReportRestTableAdapter</rd:TableAdapterName>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Body>
+    <ReportItems>
+      <Textbox Name="Textbox92">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>الجمهـورية العربيـة السـورية</Value>
+                <Style>
+                  <FontFamily>Simplified Arabic</FontFamily>
+                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style>
+                  <FontFamily>Simplified Arabic</FontFamily>
+                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox92</rd:DefaultName>
+        <Top>0.21037cm</Top>
+        <Left>10.39277cm</Left>
+        <Height>0.78521cm</Height>
+        <Width>5.08cm</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox93">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>نقابة المهندسن في اللاذقية</Value>
+                <Style>
+                  <FontFamily>Simplified Arabic</FontFamily>
+                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox93</rd:DefaultName>
+        <Top>1.03086cm</Top>
+        <Left>10.39277cm</Left>
+        <Height>0.79375cm</Height>
+        <Width>5.08cm</Width>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox94">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>إيصال رقم</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                  <Language>ar-SY</Language>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox94</rd:DefaultName>
+        <Top>4.56365cm</Top>
+        <Left>13.40902cm</Left>
+        <Height>0.56472cm</Height>
+        <Width>1.52104cm</Width>
+        <ZIndex>2</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+          <TopBorder>
+            <Color>Black</Color>
+            <Style>Solid</Style>
+            <Width>1pt</Width>
+          </TopBorder>
+          <BottomBorder>
+            <Color>Black</Color>
+            <Style>Solid</Style>
+            <Width>1pt</Width>
+          </BottomBorder>
+          <LeftBorder>
+            <Color>Black</Color>
+            <Style>Solid</Style>
+            <Width>1pt</Width>
+          </LeftBorder>
+          <RightBorder>
+            <Color>Black</Color>
+            <Style>Solid</Style>
+            <Width>1pt</Width>
+          </RightBorder>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox95">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>إيصال قبض قسط اشتراك</Value>
+                <Style>
+                  <FontFamily>Simplified Arabic</FontFamily>
+                  <FontSize>12pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox95</rd:DefaultName>
+        <Top>2.91265cm</Top>
+        <Left>6.04951cm</Left>
+        <Height>0.79375cm</Height>
+        <Width>3.97285cm</Width>
+        <ZIndex>3</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox96">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>تاريخ</Value>
+                <Style>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox94</rd:DefaultName>
+        <Top>5.19539cm</Top>
+        <Left>13.40902cm</Left>
+        <Height>0.56825cm</Height>
+        <Width>1.52104cm</Width>
+        <ZIndex>4</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+          <TopBorder>
+            <Color>Black</Color>
+            <Style>Solid</Style>
+            <Width>1pt</Width>
+          </TopBorder>
+          <BottomBorder>
+            <Color>Black</Color>
+            <Style>Solid</Style>
+            <Width>1pt</Width>
+          </BottomBorder>
+          <LeftBorder>
+            <Color>Black</Color>
+            <Style>Solid</Style>
+            <Width>1pt</Width>
+          </LeftBorder>
+          <RightBorder>
+            <Color>Black</Color>
+            <Style>Solid</Style>
+            <Width>1pt</Width>
+          </RightBorder>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="AcountDate">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Fields!Bid.Value</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>AcountDate</rd:DefaultName>
+        <Top>4.56365cm</Top>
+        <Left>10.90902cm</Left>
+        <Height>0.56472cm</Height>
+        <Width>2.35889cm</Width>
+        <ZIndex>5</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+          <TopBorder>
+            <Color>Black</Color>
+            <Style>Solid</Style>
+            <Width>1pt</Width>
+          </TopBorder>
+          <BottomBorder>
+            <Color>Black</Color>
+            <Style>Solid</Style>
+            <Width>1pt</Width>
+          </BottomBorder>
+          <LeftBorder>
+            <Color>Black</Color>
+            <Style>Solid</Style>
+            <Width>1pt</Width>
+          </LeftBorder>
+          <RightBorder>
+            <Color>Black</Color>
+            <Style>Solid</Style>
+            <Width>1pt</Width>
+          </RightBorder>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="AcountDate1">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Fields!BatchDate.Value</Value>
+                <Style>
+                  <Format>d</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>AcountDate1</rd:DefaultName>
+        <Top>5.19892cm</Top>
+        <Left>10.90902cm</Left>
+        <Height>0.56472cm</Height>
+        <Width>2.35889cm</Width>
+        <ZIndex>6</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="FullName">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Fields!FullName.Value</Value>
+                <Style>
+                  <FontSize>12pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>FullName</rd:DefaultName>
+        <Top>6.50391cm</Top>
+        <Left>9.08988cm</Left>
+        <Height>0.62646cm</Height>
+        <Width>3.71708cm</Width>
+        <ZIndex>7</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <BottomBorder>
+            <Color>Black</Color>
+            <Style>Solid</Style>
+            <Width>1pt</Width>
+          </BottomBorder>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox98">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>مبلغ وقدرة</Value>
+                <Style>
+                  <FontFamily>Simplified Arabic</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox97</rd:DefaultName>
+        <Top>7.30676cm</Top>
+        <Left>12.87985cm</Left>
+        <Height>0.62646cm</Height>
+        <Width>2.05021cm</Width>
+        <ZIndex>8</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox99">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>قسط مستحق من اشتراك عام</Value>
+                <Style>
+                  <FontFamily>Simplified Arabic</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox97</rd:DefaultName>
+        <Top>7.94464cm</Top>
+        <Left>11.31882cm</Left>
+        <Height>0.62646cm</Height>
+        <Width>3.61125cm</Width>
+        <ZIndex>9</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox100">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value> ايصال رقم</Value>
+                <Style>
+                  <FontFamily>Simplified Arabic</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox97</rd:DefaultName>
+        <Top>7.94464cm</Top>
+        <Left>7.75638cm</Left>
+        <Height>0.62646cm</Height>
+        <Width>1.62688cm</Width>
+        <ZIndex>10</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="AcountDate2">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Fields!TotalPayed.Value</Value>
+                <Style>
+                  <Format>0'ل.س.‏';(0'ل.س.‏')</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>AcountDate1</rd:DefaultName>
+        <Top>7.30602cm</Top>
+        <Left>10.37514cm</Left>
+        <Height>0.62646cm</Height>
+        <Width>2.35889cm</Width>
+        <ZIndex>11</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <BottomBorder>
+            <Color>Black</Color>
+            <Style>Solid</Style>
+            <Width>1pt</Width>
+          </BottomBorder>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <rd:FormatSymbolCulture>ar-SY</rd:FormatSymbolCulture>
+        </Style>
+      </Textbox>
+      <Textbox Name="AcountDate3">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Year(Fields!AcountDate.Value)</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>AcountDate1</rd:DefaultName>
+        <Top>7.9439cm</Top>
+        <Left>9.34327cm</Left>
+        <Height>0.62646cm</Height>
+        <Width>1.93556cm</Width>
+        <ZIndex>12</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <BottomBorder>
+            <Color>Black</Color>
+            <Style>Solid</Style>
+            <Width>1pt</Width>
+          </BottomBorder>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="AcountDate4">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Fields!AcountID.Value</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>AcountDate1</rd:DefaultName>
+        <Top>7.9439cm</Top>
+        <Left>5.71028cm</Left>
+        <Height>0.62646cm</Height>
+        <Width>1.93556cm</Width>
+        <ZIndex>13</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <BottomBorder>
+            <Color>Black</Color>
+            <Style>Solid</Style>
+            <Width>1pt</Width>
+          </BottomBorder>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox97">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>قبض من السيد</Value>
+                <Style>
+                  <FontFamily>Simplified Arabic</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox97</rd:DefaultName>
+        <Top>6.50317cm</Top>
+        <Left>12.87986cm</Left>
+        <Height>0.62646cm</Height>
+        <Width>2.05021cm</Width>
+        <ZIndex>14</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox101">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>المبلغ المقسط</Value>
+                <Style>
+                  <FontFamily>Simplified Arabic</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox97</rd:DefaultName>
+        <Top>9.38603cm</Top>
+        <Left>12.91279cm</Left>
+        <Height>0.62646cm</Height>
+        <Width>2.05021cm</Width>
+        <ZIndex>15</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="AcountDate5">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Fields!Total.Value</Value>
+                <Style>
+                  <Format>0'ل.س.‏';(0'ل.س.‏')</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>AcountDate1</rd:DefaultName>
+        <Top>9.38528cm</Top>
+        <Left>10.44807cm</Left>
+        <Height>0.62646cm</Height>
+        <Width>2.35889cm</Width>
+        <ZIndex>16</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <BottomBorder>
+            <Color>Black</Color>
+            <Style>Solid</Style>
+            <Width>1pt</Width>
+          </BottomBorder>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <rd:FormatSymbolCulture>ar-SY</rd:FormatSymbolCulture>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox103">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>الباقي المستحق</Value>
+                <Style>
+                  <FontFamily>Simplified Arabic</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox97</rd:DefaultName>
+        <Top>10.99173cm</Top>
+        <Left>12.91279cm</Left>
+        <Height>0.62646cm</Height>
+        <Width>2.05021cm</Width>
+        <ZIndex>17</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="AcountDate7">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Fields!Total.Value-Fields!TotalRest.Value</Value>
+                <Style>
+                  <Format>0'ل.س.‏';(0'ل.س.‏')</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>AcountDate1</rd:DefaultName>
+        <Top>10.99098cm</Top>
+        <Left>10.40926cm</Left>
+        <Height>0.62646cm</Height>
+        <Width>2.35889cm</Width>
+        <ZIndex>18</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <BottomBorder>
+            <Color>Black</Color>
+            <Style>Solid</Style>
+            <Width>1pt</Width>
+          </BottomBorder>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <rd:FormatSymbolCulture>ar-SY</rd:FormatSymbolCulture>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox102">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>المستلم</Value>
+                <Style>
+                  <FontFamily>Simplified Arabic</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox97</rd:DefaultName>
+        <Top>12.32917cm</Top>
+        <Left>12.44661cm</Left>
+        <Height>0.62646cm</Height>
+        <Width>1.17709cm</Width>
+        <ZIndex>19</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox104">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>أمين الصندوق</Value>
+                <Style>
+                  <FontFamily>Simplified Arabic</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox97</rd:DefaultName>
+        <Top>12.32917cm</Top>
+        <Left>2.69463cm</Left>
+        <Height>0.62646cm</Height>
+        <Width>1.9973cm</Width>
+        <ZIndex>20</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox105">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>التوقيع</Value>
+                <Style>
+                  <FontFamily>Simplified Arabic</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox97</rd:DefaultName>
+        <Top>13.09674cm</Top>
+        <Left>4.65032cm</Left>
+        <Height>0.62646cm</Height>
+        <Width>1.17709cm</Width>
+        <ZIndex>21</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox106">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>الخاتم</Value>
+                <Style>
+                  <FontFamily>Simplified Arabic</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox97</rd:DefaultName>
+        <Top>13.89958cm</Top>
+        <Left>4.65032cm</Left>
+        <Height>0.62646cm</Height>
+        <Width>1.17709cm</Width>
+        <ZIndex>22</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox107">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>مجوع الدفعات</Value>
+                <Style>
+                  <FontFamily>Simplified Arabic</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox97</rd:DefaultName>
+        <Top>10.18888cm</Top>
+        <Left>12.91279cm</Left>
+        <Height>0.62646cm</Height>
+        <Width>2.05021cm</Width>
+        <ZIndex>23</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="AcountDate8">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Fields!TotalRest.Value</Value>
+                <Style>
+                  <Format>0'ل.س.‏';(0'ل.س.‏')</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>AcountDate1</rd:DefaultName>
+        <Top>10.18813cm</Top>
+        <Left>10.40926cm</Left>
+        <Height>0.62646cm</Height>
+        <Width>2.35889cm</Width>
+        <ZIndex>24</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <BottomBorder>
+            <Color>Black</Color>
+            <Style>Solid</Style>
+            <Width>1pt</Width>
+          </BottomBorder>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <rd:FormatSymbolCulture>ar-SY</rd:FormatSymbolCulture>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox108">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>المحترم</Value>
+                <Style>
+                  <FontFamily>Simplified Arabic</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox97</rd:DefaultName>
+        <Top>6.50317cm</Top>
+        <Left>6.89856cm</Left>
+        <Height>0.62646cm</Height>
+        <Width>2.05021cm</Width>
+        <ZIndex>25</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Splite">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Code.NumToTxt(Cstr(Cint(Fields!TotalPayed.Value)))</Value>
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <Top>7.30676cm</Top>
+        <Left>1.1116cm</Left>
+        <Height>0.60224cm</Height>
+        <Width>9.08715cm</Width>
+        <ZIndex>26</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <BottomBorder>
+            <Style>Solid</Style>
+          </BottomBorder>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+    </ReportItems>
+    <Height>6.28141in</Height>
+    <Style />
+  </Body>
+  <Code>  Private Const Thau1 = " ألف "
+    Private Const Thau2 = " ألفان "
+    Private Const Thau = " آلاف "
+    Private Const Thau3 = " ألفاً "
+    Private Const thau4 = " ألفين "
+    Private Const mill1 = "مليون"
+    Private Const mill2 = "مليونين"
+    Private Const mills = "ملايين"
+  
+    Private Lira As String = "ليرة "
+    Private LengthNum As Integer = 0
+    Private Nand As String = " و "
+    Public Function NumToTxt(ByVal Number As String) As String
+        Dim result As String = ""
+        Dim re As String = ""
+        Select Case Number.Length
+            Case 1
+                result = GetFistN(Number, Number)
+            Case 2
+                result = GetFistN(Mid(Number, 2, 1), Number) + IIf(Mid(Number, 2, 1) = 0 Or Mid(Number, 1, 1) = 1 Or Mid(Number, 1, 1) = 0, " ", Nand) + GetSecondN(Mid(Number, 1, 1))
+            Case 3
+                result = GetTherdN(Mid(Number, 1, 1)) + IIf(Mid(Number, 2, 1) &lt;&gt; 0 Or Mid(Number, 3, 1) &lt;&gt; 0, Nand, "") + GetFistN(Mid(Number, 3, 1), Number) _
+                        + IIf(Mid(Number, 3, 1) = 0 Or Mid(Number, 2, 1) = 1 Or Mid(Number, 2, 1) = 0, " ", Nand) + GetSecondN(Mid(Number, 2, 1))
+            Case 4
+                result = Th(Number.Length, Number) &amp; GetTherdN(Mid(Number, 2, 1)) &amp; IIf(Mid(Number, 3, 1) &lt;&gt; 0 Or Mid(Number, 4, 1) &lt;&gt; 0, Nand, "") &amp; _
+                        GetFistN(Mid(Number, 4, 1), Number) &amp; IIf(Mid(Number, 4, 1) = 0 Or Mid(Number, 3, 1) = 1 Or Mid(Number, 3, 1) = 0, " ", Nand) &amp; GetSecondN(Mid(Number, 3, 1))
+            Case 5
+                result = Th(Number.Length, Number) &amp; GetTherdN(Mid(Number, 3, 1)) &amp; IIf(Mid(Number, 3, 1) &lt;&gt; 0 And (Mid(Number, 4, 1) &lt;&gt; 0 Or Mid(Number, 5, 1) &lt;&gt; 0), Nand, "") &amp; _
+                         GetFistN(Mid(Number, 5, 1), Number) &amp; IIf(Mid(Number, 5, 1) = 0 Or Mid(Number, 4, 1) = 1 Or Mid(Number, 4, 1) = 0, " ", Nand) &amp; GetSecondN(Mid(Number, 4, 1))
+            Case 6
+                result = Th(Number.Length, Number) &amp; GetTherdN(Mid(Number, 4, 1)) &amp; IIf(Mid(Number, 4, 1) &lt;&gt; 0 And (Mid(Number, 5, 1) &lt;&gt; 0 Or Mid(Number, 6, 1) &lt;&gt; 0), Nand, "") &amp; _
+                         GetFistN(Mid(Number, 6, 1), Number) &amp; IIf(Mid(Number, 6, 1) = 0 Or Mid(Number, 5, 1) = 1 Or Mid(Number, 5, 1) = 0, " ", Nand) &amp; GetSecondN(Mid(Number, 5, 1))
+            Case 7
+                MsgBox("إذا أردت النسخة الكاملة إتصل على الرقم " + "+963-944-388282", vbOKOnly + vbInformation, "النسخة الحالية محدودة")
+        End Select
+
+        If Number.Length = 1 Then
+            Select Case Number
+                Case 1
+                    Lira = "ليرة"
+                    re = "فقط"+ "ليرة سورية واحدة لا غير "
+                Case 2
+                    Lira = "ليرتان"
+                    re = " فقط " + " " + Lira + "سورية لاغير"
+                Case Is &gt; 2
+                    Lira = "ليرات"
+                    re = " فقط "+ " " + result + " " + Lira + "سورية لا غير"
+            End Select
+        ElseIf Number.Length = 2 Then
+            If Number = "10" Then
+                Lira = "ليرات"
+            Else
+                Lira = "ليرة"
+            End If
+            re = " فقط "+ " " + result + " " + Lira + "  سوريةلا غير "
+        ElseIf Number.Length &gt; 2 Then
+            Lira = "ليرة"
+            Dim sp As String = Strings.Right(Number, 2)
+            Select Case CInt(sp)
+                Case 1
+                    re = " فقط "+ result + " " + "ليرة سورية لا غير "
+                Case 2
+                    re = " فقط "+ result + " " + "ليرة سورية لا غير "
+                Case Is &gt; 2
+                    re = " فقط "+ result + " " + "ليرات سورية لا غير "
+            End Select
+            If sp &gt; 10 Then
+                   re = " فقط "+ result + " " + "ليرة سورية لا غير "
+	else
+	   Lira = "ليرة"
+           	   re = " فقط "+ " " + result + " " + Lira + " سورية لا غير "
+            End If
+        Else
+            Lira = "ليرة"
+            re = " فقط "+ " " + result + " " + Lira + " سورية لا غير "
+        End If
+
+        Return re
+    End Function
+    Private Function GetFistN(ByRef LN As String, ByVal nm As String) As String
+        Dim result As String = ""
+        Select Case LN
+            Case 1
+                If Mid(nm, IIf(nm.Length = 1, 2, nm.Length) - 1, 1) = 1 Or nm.Length = 5 Then
+                    result = "أحد"
+                Else
+                    result = "واحد"
+                End If
+            Case 2
+                If Mid(nm, IIf(nm.Length = 1, 2, nm.Length) - 1, 1) = 1 And nm.Length = 2 Or nm.Length = 5 Then
+                    result = "إثنا"
+                Else
+                    result = "إثنان"
+                End If
+            Case 3
+                result = "ثلاثة"
+            Case 4
+                result = "أربعة"
+            Case 5
+                result = "خمسة"
+            Case 6
+                result = "ستة"
+            Case 7
+                result = "سبعة"
+            Case 8
+                result = "ثمانية"
+            Case 9
+                result = "تسعة"
+        End Select
+        Return result
+    End Function
+    Private Function GetSecondN(ByRef LN As String) As String
+        Dim result As String = ""
+        Select Case LN
+            Case 1
+                result = "عشرة"
+            Case 2
+                result = "عشرون"
+            Case 3
+                result = "ثلاثون"
+            Case 4
+                result = "أربعون"
+            Case 5
+                result = "خمسون"
+            Case 6
+                result = "ستون"
+            Case 7
+                result = "سبعون"
+            Case 8
+                result = "ثمانون"
+            Case 9
+                result = "تسعون"
+        End Select
+        Return result
+    End Function
+    Private Function GetTherdN(ByRef LN As String) As String
+        Dim result As String = ""
+        Select Case LN
+            Case 1
+                result = "مئة"
+            Case 2
+                result = "مئتان"
+            Case 3
+                result = "ثلاثمائة"
+            Case 4
+                result = "أربعمائة"
+            Case 5
+                result = "خمسمائة"
+            Case 6
+                result = "ستمائة"
+            Case 7
+                result = "سبعمائة"
+            Case 8
+                result = "ثمانمائة"
+            Case 9
+                result = "تسعمائة"
+        End Select
+        Return result
+    End Function
+    Private Function Th(ByVal Countn As Integer, ByVal Cnumber As String) As String
+        Dim result As String = ""
+        If Countn = 4 Then
+            If Mid(Cnumber, 1, 1) = 1 Then
+                result = Thau1 &amp; IIf(Mid(Cnumber, 2, 1) = 0, "", Nand)
+            ElseIf Mid(Cnumber, 1, 1) = 2 Then
+                result = Thau2 &amp; IIf(Mid(Cnumber, 2, 1) = 0, "", Nand)
+            Else
+                result = GetFistN(Mid(Cnumber, 1, 1), Cnumber) &amp; " " &amp; Thau &amp; IIf(Mid(Cnumber, 2, 1) = 0, " ", Nand)
+            End If
+        End If
+        If Countn = 5 Then
+            If Mid(Cnumber, 1, 1) = 1 And Mid(Cnumber, 2, 1) = 0 Then
+                result = GetSecondN(Mid(Cnumber, 1, 1)) &amp; " " &amp; Thau &amp; IIf(Mid(Cnumber, 2, 1) = 0 And Mid(Cnumber, 3, 1) = 0 And Mid(Cnumber, 4, 1) = 0 And Mid(Cnumber, 5, 1) = 0, " ", Nand)
+            Else
+                result = GetFistN(Mid(Cnumber, 2, 1), Cnumber) &amp; IIf(Mid(Cnumber, 2, 1) = 0 Or Mid(Cnumber, 1, 1) = 1 Or Mid(Cnumber, 1, 1) = 0, " ", Nand) &amp; GetSecondN(Mid(Cnumber, 1, 1)) &amp; " " &amp; Thau3 &amp; IIf(Mid(Cnumber, 2, 1) = 0 And Mid(Cnumber, 3, 1) = 0, " ", Nand)
+            End If
+        End If
+        If Countn = 6 Then
+            If Mid(Cnumber, 2, 1) = 0 And Mid(Cnumber, 3, 1) = 0 And Mid(Cnumber, 4, 1) = 0 And Mid(Cnumber, 5, 1) = 0 And Mid(Cnumber, 6, 1) = 0 Then
+                result = GetTherdN(Mid(Cnumber, 1, 1)) + Thau1 + " "
+            ElseIf Mid(Cnumber, 2, 1) = 0 And Mid(Cnumber, 3, 1) = 0 Then
+                result = GetTherdN(Mid(Cnumber, 1, 1)) + Thau1 + Nand
+            ElseIf Mid(Cnumber, 2, 1) = 0 And Mid(Cnumber, 3, 1) &lt;&gt; 0 Then
+                result = GetTherdN(Mid(Cnumber, 1, 1)) + Nand + IIf(Mid(Cnumber, 3, 1) = 1, Thau1, IIf(Mid(Cnumber, 3, 1) = 2, thau4, GetFistN(Mid(Cnumber, 3, 1), Cnumber) + Thau)) + IIf(Mid(Cnumber, 4, 1) = 0 And Mid(Cnumber, 5, 1) = 0 And Mid(Cnumber, 6, 1) = 0, "", Nand)
+            Else
+                result = GetTherdN(Mid(Cnumber, 1, 1)) + Nand + GetFistN(Mid(Cnumber, 3, 1), Cnumber) + IIf(Mid(Cnumber, 3, 1) = 0 Or Mid(Cnumber, 2, 1) = 1 Or Mid(Cnumber, 2, 1) = 0, " ", Nand) + GetSecondN(Mid(Cnumber, 2, 1)) + Thau3 + Nand
+            End If
+        End If
+        Return result
+    End Function</Code>
+  <Width>6.09164in</Width>
+  <Page>
+    <PageHeight>29.7cm</PageHeight>
+    <PageWidth>21cm</PageWidth>
+    <LeftMargin>2cm</LeftMargin>
+    <RightMargin>2cm</RightMargin>
+    <TopMargin>2cm</TopMargin>
+    <BottomMargin>2cm</BottomMargin>
+    <ColumnSpacing>0.13cm</ColumnSpacing>
+    <Style />
+  </Page>
+  <rd:ReportID>6f8cd948-4d01-4dbc-9e17-535571efed23</rd:ReportID>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+</Report>

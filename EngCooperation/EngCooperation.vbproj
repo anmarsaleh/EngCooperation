@@ -1,0 +1,640 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A54717FA-810F-4BE9-950E-C2828296E4B3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>EngCooperation.My.MyApplication</StartupObject>
+    <RootNamespace>EngCooperation</RootNamespace>
+    <AssemblyName>Ramitta</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsLocation>Relative</BootstrapperComponentsLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Ramitta.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Optimize>false</Optimize>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Ramitta.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>9FC2217B6F383E53F4BD9CD3AEE9EF63AC1F4B0C</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>RamittaKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Aus.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>RamittaKey.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Ramitta.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Ramitta.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Ramitta.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\Ramitta.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DocumentationFile>Ramitta.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\Ramitta.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DocumentationFile>Ramitta.xml</DocumentationFile>
+    <Optimize>true</Optimize>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\Ramitta.exe.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.vb</CodeAnalysisModuleSuppressionsFile>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Program Files (x86)\Microsoft Visual Studio 11.0\ReportViewer\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AcountingDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AcountingDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AcountingDataSet.vb">
+      <DependentUpon>AcountingDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="AppSettingsDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppSettingsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BatchesDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BatchesDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BatchesDataSet.vb">
+      <DependentUpon>BatchesDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ClassesDataSet.vb">
+      <DependentUpon>ClassesDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EngCase.Designer.vb">
+      <DependentUpon>EngCase.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EngCase.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EngRest.Designer.vb">
+      <DependentUpon>EngRest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EngRest.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAcount.Designer.vb">
+      <DependentUpon>FrmAcount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAcount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClassesDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ClassesDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EngDBDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EngDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EngFrm.Designer.vb">
+      <DependentUpon>EngFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EngFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAmountEng.Designer.vb">
+      <DependentUpon>FrmAmountEng.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAmountEng.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmArchiv.Designer.vb">
+      <DependentUpon>FrmArchiv.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmArchiv.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBoxAcount.Designer.vb">
+      <DependentUpon>FrmBoxAcount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBoxAcount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBoxMove.Designer.vb">
+      <DependentUpon>FrmBoxMove.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBoxMove.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmChangUser.Designer.vb">
+      <DependentUpon>FrmChangUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmChangUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCheckRpt.Designer.vb">
+      <DependentUpon>FrmCheckRpt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCheckRpt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmClasses.Designer.vb">
+      <DependentUpon>FrmClasses.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmClasses.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEngRep.Designer.vb">
+      <DependentUpon>FrmEngRep.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEngRep.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmNewEng.Designer.vb">
+      <DependentUpon>FrmNewEng.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmNewEng.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPay.Designer.vb">
+      <DependentUpon>FrmPay.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPay.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPayAcount.Designer.vb">
+      <DependentUpon>FrmPayAcount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPayAcount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTreeAcount.Designer.vb">
+      <DependentUpon>FrmTreeAcount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTreeAcount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm1.Designer.vb">
+      <DependentUpon>LoginForm1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mainfrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mainfrm.Designer.vb">
+      <DependentUpon>Mainfrm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="MyNumTotxt.vb" />
+    <Compile Include="PayDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>PayDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ProgressBackup.Designer.vb">
+      <DependentUpon>ProgressBackup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProgressBackup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Setting.Designer.vb">
+      <DependentUpon>Setting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Setting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.vb" />
+    <Compile Include="SplashScreen1.Designer.vb">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInfoDataSet.vb">
+      <DependentUpon>UserInfoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UserInfoFrm.Designer.vb">
+      <DependentUpon>UserInfoFrm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UserInfoFrm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserInfoDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserInfoDataSet.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BatchsPayed.rdlc" />
+    <EmbeddedResource Include="EngCase.resx">
+      <DependentUpon>EngCase.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngRest.resx">
+      <DependentUpon>EngRest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAcount.resx">
+      <DependentUpon>FrmAcount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EngFrm.resx">
+      <DependentUpon>EngFrm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAmountEng.resx">
+      <DependentUpon>FrmAmountEng.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmArchiv.resx">
+      <DependentUpon>FrmArchiv.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBoxAcount.resx">
+      <DependentUpon>FrmBoxAcount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBoxMove.resx">
+      <DependentUpon>FrmBoxMove.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmChangUser.resx">
+      <DependentUpon>FrmChangUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCheckRpt.resx">
+      <DependentUpon>FrmCheckRpt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmClasses.resx">
+      <DependentUpon>FrmClasses.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEngRep.resx">
+      <DependentUpon>FrmEngRep.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmNewEng.resx">
+      <DependentUpon>FrmNewEng.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPay.resx">
+      <DependentUpon>FrmPay.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPayAcount.resx">
+      <DependentUpon>FrmPayAcount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTreeAcount.resx">
+      <DependentUpon>FrmTreeAcount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm1.resx">
+      <DependentUpon>LoginForm1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mainfrm.ar-SY.resx">
+      <DependentUpon>Mainfrm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mainfrm.resx">
+      <DependentUpon>Mainfrm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressBackup.resx">
+      <DependentUpon>ProgressBackup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report1.rdlc" />
+    <EmbeddedResource Include="Report2.rdlc" />
+    <EmbeddedResource Include="Report3.rdlc" />
+    <EmbeddedResource Include="Report4.rdlc" />
+    <EmbeddedResource Include="Report5.rdlc" />
+    <EmbeddedResource Include="Report6.rdlc" />
+    <EmbeddedResource Include="Report7.rdlc" />
+    <EmbeddedResource Include="Setting.resx">
+      <DependentUpon>Setting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserInfoFrm.resx">
+      <DependentUpon>UserInfoFrm.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AcountingDataSet.xsc">
+      <DependentUpon>AcountingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AcountingDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AcountingDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AcountingDataSet.xss">
+      <DependentUpon>AcountingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="app.config" />
+    <None Include="AppSettingsDataSet.xsc">
+      <DependentUpon>AppSettingsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AppSettingsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AppSettingsDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AppSettingsDataSet.xss">
+      <DependentUpon>AppSettingsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BatchesDataSet.xsc">
+      <DependentUpon>BatchesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BatchesDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BatchesDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BatchesDataSet.xss">
+      <DependentUpon>BatchesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ClassesDataSet.xsc">
+      <DependentUpon>ClassesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ClassesDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ClassesDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ClassesDataSet.xss">
+      <DependentUpon>ClassesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EngDBDataSet.xsc">
+      <DependentUpon>EngDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EngDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EngDBDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EngDBDataSet.xss">
+      <DependentUpon>EngDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="PayDataSet.xsc">
+      <DependentUpon>PayDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="PayDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>PayDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="PayDataSet.xss">
+      <DependentUpon>PayDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="RamittaKey.pfx" />
+    <None Include="UserInfoDataSet.xsc">
+      <DependentUpon>UserInfoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="UserInfoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>UserInfoDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="UserInfoDataSet.xss">
+      <DependentUpon>UserInfoDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.10.0">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2008 Express</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\messenger_big.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shutdown.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ctxwiz_opn.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cab.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\idr_dll.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\INFO.ICO" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Aus.ico" />
+    <None Include="Resources\ILoveSyria.gif" />
+    <None Include="Resources\255umh4.jpg" />
+    <None Include="Resources\connected_data.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>if exist "$(TargetPath).locked" del "$(TargetPath).locked"
+
+if exist "$(TargetPath)" if not exist "$(TargetPath).locked" move "$(TargetPath)" "$(TargetPath).locked"</PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
